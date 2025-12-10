@@ -18,8 +18,8 @@ class EmployeeController {
 	@Autowired
     private EmployeeService employeeService;
 
-	@GetMapping("/employees")
-    public Employee getIndex() {
+	@GetMapping("/")
+    public String getIndex() {
         return "<h1>안녕하세요</h1>";
     }
 	
