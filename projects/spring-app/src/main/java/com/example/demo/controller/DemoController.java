@@ -20,7 +20,7 @@ class EmployeeController {
 
 	@GetMapping("/employees")
     public Employee getIndex() {
-        return "<h1>안녕하세요</h1> 수정했습니다";
+        return "<h1>안녕하세요</h1>";
     }
 	
     @GetMapping("/employees")
