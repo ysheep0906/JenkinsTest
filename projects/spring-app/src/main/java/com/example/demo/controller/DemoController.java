@@ -17,6 +17,11 @@ import com.example.demo.service.EmployeeService;
 class EmployeeController {   
 	@Autowired
     private EmployeeService employeeService;
+
+	@GetMapping("/employees")
+    public Employee getIndex() {
+        return "<h1>안녕하세요</h1> 수정했습니다";
+    }
 	
     @GetMapping("/employees")
     public Employee getAll() {
